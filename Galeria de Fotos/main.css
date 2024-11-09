@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.container {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #5f27cd;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-bottom: 16px solid #341f97;
+    text-transform: uppercase;
+    font-style: italic;
+    border-radius: 10px 10px 0 0;
+}
+
+header button {
+    background-color: #fff;
+    color: #5f27cd;
+    padding: 10px 20px;
+    margin-left: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #5f27cd;
+    color: #fff;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0;
+    background-color: #c8d6e5;
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 10px 20px;
+}
+
+button {
+    background-color: #fff;
+    color: #5f27cd;
+    margin-left: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button#cancelar {
+    color: red;
+}
+
+button:hover {
+    background-color: #5f27cd;
+    color: #fff;
+}
+
+button#cancelar:hover {
+    background-color: red;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 150px;
+    overflow-y: hidden;
+}
+
+ul li div.overlay-imagem-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 16px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+
+ul li div.overlay-imagem-link a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #5f27cd;
+}
+
+ul li img {
+    width: 100%;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
