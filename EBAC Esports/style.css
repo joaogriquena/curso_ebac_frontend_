@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+article.sobre-loja {
+    display: flex;
+}
+
+article.sobre-loja img {
+    width: 400px;
+    height: auto;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+ul.produtos-disponiveis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+ul.produtos-disponiveis li {
+    margin: 0 5px 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    text-align: center;
+}
+
+ul.produtos-disponiveis li img {
+    width: 100%;
+    height: auto;
+}
+
+ul.produtos-disponiveis li p {
+    font-size: 14px;
+    text-align: left;
+    margin: 10px;
+}
+
+ul.produtos-disponiveis li button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul.produtos-disponiveis li button:hover {
+    background-color: #000;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    article.sobre-loja img {
+        width: 100%;
+        height: auto;
+    }
+
+    article.sobre-loja {
+        display: block;
+    }
+
+    ul.produtos-disponiveis {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    header ul {
+        flex-direction: column;
+    }
+
+    article.sobre-loja img {
+        width: 100%;
+        height: auto;
+    }
+
+    article.sobre-loja {
+        display: block;
+    }
+
+    ul.produtos-disponiveis {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        margin: 0 auto;
+    }
+}
