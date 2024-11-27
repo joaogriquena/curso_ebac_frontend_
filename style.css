@@ -1,0 +1,13 @@
+form {
+    margin: 16px;
+}
+
+div.row,
+div.form-group {
+    margin-bottom: 10px;
+}
+
+button.btn.btn-primary {
+    margin-top: 16px;
+    padding: 10px 20px;
+}
