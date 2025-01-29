@@ -1,0 +1,25 @@
+{
+  "name": "curso_ebac_frontend_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/main.scss build/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaogriquena/curso_ebac_frontend_.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joaogriquena/curso_ebac_frontend_/issues"
+  },
+  "homepage": "https://github.com/joaogriquena/curso_ebac_frontend_#readme",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}

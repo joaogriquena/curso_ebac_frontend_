@@ -1,0 +1,11 @@
+@use '../config/variaveis' as var;
+
+.container {
+    max-width: var.$max-width-container;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1023px) {
+        max-width: 80%;
+    }
+}
