@@ -1,0 +1,16 @@
+@use '../config/variaveis' as var;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var.$font-family;
+}
+
+body {
+    background-color: var.$background-color;
+}
+
+li {
+    list-style: none;
+}
